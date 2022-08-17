@@ -5,7 +5,7 @@ import UAuth from '@uauth/js';
 const uauth = new UAuth(
   {
     clientID: "20e4245a-f46a-40b1-b6dc-d8a8fb529a58",
-    redirectUri: "https://legoshack.vercel.app/",
+    redirectUri: "https://cryptopunk-lake.vercel.app/",
     scope: "openid wallet"
   }
 )
