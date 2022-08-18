@@ -8,9 +8,9 @@ https://cryptopunk-lake.vercel.app/#
 
 ### Recorded video demo of the integration (max. 3 mins)
 
-https://vimeo.com/740300585 ---- Domain Resolution
+https://vimeo.com/740741325 ---- Domain Resolution
 
-https://vimeo.com/740303485 ---- Login with unstoppable domain
+https://vimeo.com/740742987 ---- Login with unstoppable domain
 
 ### Person of contact in case there are any questions
 
