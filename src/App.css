@@ -108,7 +108,7 @@ header .container {
 
 .links a {
   color: var(--lightTwo);
-  margin-left: 4.5rem;
+  margin-left: 3rem;
   display: inline-block;
   transition: 0.3s;
 }
@@ -120,7 +120,7 @@ header .container {
 
 .btn {
   display: inline-block;
-  padding: 0.9rem 1.9rem;
+  padding: 0.9rem 1.5rem;
   color: #fff !important;
   background-color: var(--mainColor);
   border-radius: 16px;

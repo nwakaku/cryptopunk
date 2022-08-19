@@ -1,6 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../images/celo.png';
 import UAuth from '@uauth/js';
+import transakSDK from "@transak/transak-sdk";
+
+let transak = new transakSDK({
+  apiKey: "fec0443a-44f5-4890-aa3f-b09626d6485e", // Your API Key
+  environment: "STAGING", // STAGING/PRODUCTION
+  defaultCryptoCurrency: "ETH",
+  walletAddress: "", // Your customer's wallet address
+  themeColor: "000000", // App theme color
+  fiatCurrency: "", // INR/GBP
+  email: "", // Your customer's email address
+  redirectURL: "",
+  hostURL: window.location.origin,
+  widgetHeight: "550px",
+  widgetWidth: "95%",
+});
+
+transak.on(transak.ALL_EVENTS, (data) => {
+  console.log(data);
+});
 
 const uauth = new UAuth(
   {
@@ -70,6 +89,9 @@ const Nav = ({navv, setNavv}) => {
                 <li><a href="#">Features</a></li>
                 <li><a href="#">Pricing</a></li>
                 {/* <li><a href="#">Testimonials</a></li> */}
+                <li onClick={() => transak.init()}>
+                  <a href='#' className='btn'>Quick Monie</a>
+                </li>
                 {userWallet ? 
                 <>
                 <li onClick={() => login()}>
@@ -83,6 +105,7 @@ const Nav = ({navv, setNavv}) => {
                 <li onClick={() => login()}>
                     <a href="#" className="btn">Signup With Unstoppable</a>
                 </li>}
+                
               </ul>
             </div>
 
